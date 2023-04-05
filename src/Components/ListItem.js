@@ -6,6 +6,7 @@ export const ListItem = (props) => {
   const moveToTop = () => {
     props.onMoveToTop(props.index);
   };
+  console.log("my list names are "+ props.name);
 
   const handlePriorityChange = (event) => {
     const newPriority = event.target.value;
