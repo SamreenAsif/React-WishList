@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./WishList.css";
-import { ListItem } from "./Components/ListItem";
-import sortIcon from "./imgs/sortIcon.png";
+import { ListItem } from "../listItems/ListItem";
+import sortIcon from "../../Assert/sortIcon.png";
 
 
 export const WishList = () => {
   const [items, setItems] = useState([]);
+ 
   const addItem = () => {
     const itemName = document.getElementById("itemName").value;
     if (itemName !== "") {
@@ -15,7 +16,7 @@ export const WishList = () => {
       };
       setItems([...items, newItem]);
     }
-    if (itemName == "") alert("You cannot leave this empty");
+    if (itemName === "") alert("You cannot leave this empty");
   };
 
   const removeItem = (index) => {
@@ -93,6 +94,7 @@ export const WishList = () => {
             />
           ))}
         </ul>
+
       </div>
     </>
   );

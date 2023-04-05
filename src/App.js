@@ -1,4 +1,4 @@
-import { WishList } from './WishList';
+import { WishList } from './Components/wishlist/WishList';
 import './App.css';
 
 function App() {
